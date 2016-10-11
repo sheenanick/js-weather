@@ -2,12 +2,25 @@
 <html>
   <head>
     <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
+    <script type="text/javascript" src="js/canvasjs.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <title></title>
   </head>
   <body>
     <div class="container">
+      <h1>Get Weather Conditions From Anywhere!</h1>
+      <form>
+        <label for="location">Enter a location:</label>
+        <input id="location" type="text">
+        <button class="btn-success" id="weatherLocation">Get Some Amazing Weather Stats!</button><br>
+        <input type="radio" name="temp" id="celsius" value="celsius" checked> Celsius<br>
+        <input type="radio" name="temp" id="fahrenheit" value="fahrenheit"> Fahrenheit<br>
+      </form>
+      <div class="showWeather"></div>
+      <div class="showTemperature"></div>
+      <div id="chartContainer" style="height: 300px; width: 100%;"></div>
 
     </div>
 
